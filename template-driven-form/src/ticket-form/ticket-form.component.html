@@ -1,1 +1,124 @@
-<p>ticket-form works!</p>
+<div class="container">
+    <h1>Log a new Ticket</h1>
+    <form>
+
+        <div class="form-group">
+            <label for="contact">Contact</label>
+            <input type="text" class="form-control" id="contact" 
+            required
+            [(ngModel)]="model.contact" name="contact">
+        </div>
+        
+        <div class="form-group">
+            <label for="contactEmail">email address</label>
+            <input type="text" class="form-control" id="contactEmail" 
+            required
+            [(ngModel)]="model.contactEmail" name="contactEmail">
+        </div>
+
+        <div class="form-group">
+            <label for="organisation">organisation</label>
+            <input type="text" class="form-control" id="organisation" 
+            required
+            [(ngModel)]="model.organisation" name="organisation">
+        </div>
+
+        <div class="form-group">
+            <label for="room">room</label>
+            <input type="text" class="form-control" id="room" 
+            required
+            [(ngModel)]="model.room" name="room">
+        </div>
+
+        <div class="form-group">
+            <label for="building">building</label>
+            <input type="text" class="form-control" id="building" 
+            required
+            [(ngModel)]="model.building" name="building">
+        </div>
+
+        <div class="form-group">
+            <label for="phone">phone</label>
+            <input type="text" class="form-control" id="phone" 
+            required
+            [(ngModel)]="model.phone" name="phone">
+        </div>
+
+        <div class="form-group">
+            <label for="mobile">mobile</label>
+            <input type="text" class="form-control" id="mobile" 
+            required
+            [(ngModel)]="model.mobile" name="mobile">
+        </div>
+
+        <div class="form-group">
+            <label for="contactPreference">contact preference</label>
+            <select class="form-control" id="contactPreference" required>
+                <option *ngFor="let contactPreference of contactPreferences" [value]="contactPreference">{{contactPreference}}</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="subject">subject</label>
+            <input type="text" class="form-control" id="subject" 
+            required
+            [(ngModel)]="model.subject" name="subject">
+        </div>
+
+        <div class="form-group">
+            <label for="description">description</label>
+            <textarea class="form-control" id="description" 
+            required
+            [(ngModel)]="model.description" name="description" rows="5" cols="33"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="techNotes">techNotes</label>
+            <textarea class="form-control" id="techNotes" 
+            [(ngModel)]="model.description" name="techNotes" rows="5" cols="33"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="ticketChannel">ticket channel</label>
+            <select class="form-control" id="ticketChannel" required>
+                <option *ngFor="let ticketChannel of ticketChannels" [value]="ticketChannel">{{ticketChannel}}</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="siteVisitRequired">siteVisitRequired</label>
+            <input type="radio" class="form-control" id="siteVisitRequired" 
+            required
+            [(ngModel)]="model.siteVisitRequired" name="siteVisitRequired">
+        </div>
+
+        <div class="form-group">
+            <label for="assetNumber">assetNumber</label>
+            <input type="text" class="form-control" id="assetNumber" 
+            required
+            [(ngModel)]="model.assetNumber" name="assetNumber">
+        </div>
+
+        <div class="form-group">
+            <label for="catagory">catagory</label>
+            <select class="form-control" id="catagory" required>
+                <option *ngFor="let catagory of catagories" [value]="catagory">{{catagory}}</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="team">team</label>
+            <select class="form-control" id="team" required>
+                <option *ngFor="let team of teams" [value]="team">{{team}}</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="minsContributed">minsContributed</label>
+            <input type="text" class="form-control" id="minsContributed" 
+            required
+            [(ngModel)]="model.minsContributed" name="minsContributed">
+        </div>
+
+    </form>
+</div>

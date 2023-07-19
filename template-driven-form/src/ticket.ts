@@ -1,21 +1,21 @@
 export class ticket {
     constructor(
-        contact: string,
-        contactEmail: string,
-        organisation: string,
-        room: string,
-        building: string,
-        phone: string,
-        mobile: string,
-        contactPreference: string,
-        subject: string,
-        description: string,
-        techNotes: string,
-        ticketChannel: string,
-        siteVisitRequired: boolean,
-        assetNumber: string,
-        catagory: string,
-        team: string,
-        minsContributed: number
+        public contact: string,
+        public contactEmail: string,
+        public organisation: string,
+        public room: string,
+        public building: string,
+        public phone: string,
+        public mobile: string,
+        public contactPreference: string,
+        public subject: string,
+        public description: string,
+        public techNotes: string,
+        public ticketChannel: string,
+        public siteVisitRequired: boolean,
+        public assetNumber: string,
+        public catagory: string,
+        public team: string,
+        public minsContributed: number
     ) { }
 }

@@ -10,10 +10,10 @@ export class TicketFormComponent {
   submitted = false;
   onSubmit() { this.submitted = true; }
 
-  contactPreference = ['phone', 'email', 'MS Teams'];
-  ticketChannel = ['phone', 'portal', 'events management', 'email', 'self service', 'MS Teams'];
-  catagory = ['advice', 'networking', 'software', 'hardware'];
-  team = ['1st Line', '2nd Line', '3rd Line', 'Application development', 'data management'];
+  contactPreferences = ['phone', 'email', 'MS Teams'];
+  ticketChannels = ['phone', 'portal', 'events management', 'email', 'self service', 'MS Teams'];
+  catagories = ['advice', 'networking', 'software', 'hardware'];
+  teams = ['1st Line', '2nd Line', '3rd Line', 'Application development', 'data management'];
 
   model = new ticket(
     'example User', 
@@ -23,15 +23,15 @@ export class TicketFormComponent {
     'example Building name',
     '01234 567890',
     '01234 567890',
-    this.contactPreference[0],
+    this.contactPreferences[0],
     'example subject',
     'example description',
     'example tech notes',
-    this.ticketChannel[5],
+    this.ticketChannels[5],
     false,
     'ABC123456',
-    this.catagory[0],
-    this.team[3],
+    this.catagories[0],
+    this.teams[3],
     1
     );
 
